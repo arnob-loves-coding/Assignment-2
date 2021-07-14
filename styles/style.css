@@ -80,10 +80,10 @@ body {
   background-color: white;
   box-shadow: 0 0 20px rgb(233, 228, 228);
   border-radius: 6px;
-  transition: all 250ms ease-in;
+  transition: all 200ms ease-in;
 }
 .player:hover {
-  transform: scale(1.02);
+  transform: scale(1.001);
   box-shadow: 0 0 20px rgb(170, 168, 168);
 }
 .player img {
@@ -153,7 +153,6 @@ body {
 }
 .tickets .buttons .btn.btn-2:hover {
   background-color: transparent;
-
   border: transparent;
 }
 .tickets .buttons .btn.btn-2:hover a {
@@ -246,6 +245,13 @@ footer .social-icons i:hover {
   .players {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* tickets style */
+  .tickets h1 {
+    font-size: 30px;
+  }
+  .tickets p {
+    font-size: 17px;
+  }
   /* partners style */
   .partners .partners-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -287,6 +293,13 @@ footer .social-icons i:hover {
   .players {
     grid-template-columns: 1fr;
   }
+  /* tickets style */
+  .tickets h1 {
+    font-size: 26px;
+  }
+  .tickets p {
+    font-size: 13px;
+  }
   /* partners style */
   .partners .partners-grid {
     grid-template-columns: 1fr;
@@ -301,5 +314,14 @@ footer .social-icons i:hover {
   footer img {
     width: 320px;
     height: 50px;
+  }
+}
+@media (max-width: 499px) {
+  /* tickets style */
+  .tickets h1 {
+    font-size: 21px;
+  }
+  .tickets p {
+    font-size: 9px;
   }
 }
