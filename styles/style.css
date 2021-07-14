@@ -132,30 +132,30 @@ body {
   margin-inline: 10px;
   border-radius: 0;
 }
-.tickets .buttons .btn.btn-1 {
+.tickets .buttons .btn-1 {
   background-color: transparent;
   outline: 3px solid #e02c6d;
   border: transparent;
   transition: all 250ms ease-out;
 }
-.tickets .buttons .btn.btn-1 a {
+.tickets .buttons .btn-1 a {
   color: #e02c6d;
 }
-.tickets .buttons .btn.btn-1:hover {
+.tickets .buttons .btn-1:hover {
   background-color: #e02c6d;
 }
-.tickets .buttons .btn.btn-1:hover a {
+.tickets .buttons .btn-1:hover a {
   color: white;
 }
-.tickets .buttons .btn.btn-2 {
+.tickets .buttons .btn-2 {
   transition: all 250ms ease-out;
   outline: 3px solid #e02c6d;
 }
-.tickets .buttons .btn.btn-2:hover {
+.tickets .buttons .btn-2:hover {
   background-color: transparent;
   border: transparent;
 }
-.tickets .buttons .btn.btn-2:hover a {
+.tickets .buttons .btn-2:hover a {
   color: #e02c6d;
 }
 
@@ -211,7 +211,7 @@ footer .social-icons i:hover {
   transform: rotate(360deg);
 }
 
-/* media query for tablet */
+/* first media query for tablet */
 @media (max-width: 1334px) {
   /* common styles or utlities */
   .section-container {
@@ -257,13 +257,14 @@ footer .social-icons i:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* second media query for tablet */
 @media (max-width: 886px) {
   /* banner style */
   .banner-left h1 {
     font-size: 39.7px;
   }
 }
-/* media query for mobile */
+/* first media query for mobile */
 @media (max-width: 688px) {
   /* common style or utilities */
   .section-container {
@@ -294,6 +295,12 @@ footer .social-icons i:hover {
     grid-template-columns: 1fr;
   }
   /* tickets style */
+  .tickets .buttons .btn {
+    padding: 7px 18px;
+  }
+  .tickets .buttons .btn a {
+    font-size: 12.5px;
+  }
   .tickets h1 {
     font-size: 26px;
   }
@@ -316,6 +323,7 @@ footer .social-icons i:hover {
     height: 50px;
   }
 }
+/* second media query for mobile */
 @media (max-width: 499px) {
   /* tickets style */
   .tickets h1 {
