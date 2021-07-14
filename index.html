@@ -9,8 +9,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- css -->
+    <!-- external css -->
     <link rel="stylesheet" href="styles/style.css" />
+    <!-- embedded css (for it was not working in the external, I swear!) -->
+    <style>
+      .tickets {
+        background-image: url(images/tickets.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
     <title>Assignment-2</title>
   </head>
   <body>
@@ -20,9 +28,9 @@
         <h1>Conmebol</h1>
         <h1>Copa America</h1>
         <h1>2021</h1>
-        <button>
-          <a href="#"
-            >Watch live&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i
+        <button class="btn">
+          <a href="#" class="hyperlink"
+            >Watch live&nbsp;&nbsp;<i class="fa fa-arrow-right"></i
           ></a>
         </button>
       </div>
@@ -47,7 +55,7 @@
             <img src="images/players/player-2.png" alt="" />
             <h2>Lionel Messi</h2>
             <p>
-              Off the pitch, Neymar ranks among the world's most prominent
+              Off the pitch, Messi ranks among the world's most prominent
               sportsmen. SportsPro named him the most marketable athlete.
             </p>
           </div>
@@ -55,7 +63,7 @@
             <img src="images/players/player-3.png" alt="" />
             <h2>Cristiano Ronaldo</h2>
             <p>
-              Off the pitch, Neymar ranks among the world's most prominent
+              Off the pitch, Ronaldo ranks among the world's most prominent
               sportsmen. SportsPro named him the most marketable athlete.
             </p>
           </div>
@@ -63,7 +71,7 @@
             <img src="images/players/player-4.png" alt="" />
             <h2>Paulo Dybala</h2>
             <p>
-              Off the pitch, Neymar ranks among the world's most prominent
+              Off the pitch, Dybala ranks among the world's most prominent
               sportsmen. SportsPro named him the most marketable athlete.
             </p>
           </div>
@@ -71,7 +79,7 @@
             <img src="images/players/player-5.png" alt="" />
             <h2>Mesut Ozil</h2>
             <p>
-              Off the pitch, Neymar ranks among the world's most prominent
+              Off the pitch, Mesut ranks among the world's most prominent
               sportsmen. SportsPro named him the most marketable athlete.
             </p>
           </div>
@@ -79,7 +87,7 @@
             <img src="images/players/player-6.png" alt="" />
             <h2>Mauro Icardi</h2>
             <p>
-              Off the pitch, Neymar ranks among the world's most prominent
+              Off the pitch, Icardi ranks among the world's most prominent
               sportsmen. SportsPro named him the most marketable athlete.
             </p>
           </div>
@@ -87,7 +95,7 @@
             <img src="images/players/player-7.png" alt="" />
             <h2>Di Maria</h2>
             <p>
-              Off the pitch, Neymar ranks among the world's most prominent
+              Off the pitch, Maria ranks among the world's most prominent
               sportsmen. SportsPro named him the most marketable athlete.
             </p>
           </div>
@@ -95,7 +103,7 @@
             <img src="images/players/player-8.png" alt="" />
             <h2>Kylian Mbappé</h2>
             <p>
-              Off the pitch, Neymar ranks among the world's most prominent
+              Off the pitch, Mbappé ranks among the world's most prominent
               sportsmen. SportsPro named him the most marketable athlete.
             </p>
           </div>
@@ -103,7 +111,7 @@
             <img src="images/players/player-9.png" alt="" />
             <h2>Mohamed Salah</h2>
             <p>
-              Off the pitch, Neymar ranks among the world's most prominent
+              Off the pitch, Salah ranks among the world's most prominent
               sportsmen. SportsPro named him the most marketable athlete.
             </p>
           </div>
@@ -113,7 +121,12 @@
       <section class="tickets">
         <h1>Hooray! The wait is over</h1>
         <p>The biggest season is few months away. Find your tickets now</p>
-        <button><a href="#">Tickets</a></button>
+        <div class="buttons">
+          <button class="btn">
+            <a href="#" class="hyperlink">Schedules</a>
+          </button>
+          <button class="btn"><a href="#" class="hyperlink">Tickets</a></button>
+        </div>
       </section>
       <!-- partners -->
       <section class="partners">
